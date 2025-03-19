@@ -1,0 +1,18 @@
+version: 2
+
+exposures:
+  - name: executive_dashboard
+    label: Executive Dashboard
+    type: dashboard
+    maturity: low
+    url: https://422c5e5a.us1a.app.preset.io/superset/dashboard/8/?edit=true&native_filters_key=pQwwKDwQxz8yS8Jhu8VZxNAAMpi_oP7PzM-WMQvi84RAremTxvIt4X7tTLllCuNy
+    description: Executive Dashboard about Airbnb listings and hosts
+      
+
+    depends_on:
+      - ref('dim_listings_w_hosts')
+      - ref('mart_fullmoon_reviews')
+
+    owner:
+      name: Subhrangshu
+      email: mukherjeeneel141@gmail.com
